@@ -29,19 +29,46 @@
               <li>
              
                 <img src="../Portfolio_NoelleEverage/images/purty_wood.png"> <!-- random image -->
-                <div class="caption center-align">
-                  <h3>Hello, I'm </h3> <h3 class="black-text">Noelle Everage</h3> <h3>I'm a Full Stack Web Developer</h3>
+                <div class="caption left-align">
+                  <h3>Hello, I'm </h3> <h3 class="teal-text">Noelle Everage</h3> <h3>I'm a Full Stack Web Developer</h3>
                 </div>
              </li>
               
             </ul>
           </div>
 </body>
+<ul id="slide-out" class="sidenav sidenav-fixed">
+        <li><div class="user-view">
+                <div class="background">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTVNbt6L4FEoK7Qr6WDw6ZaPj85et9O7--MYfiXN6T8sHu5z37f">
+                </div>
+                <a href="#user"><img class="circle"width="75px" height="75px" src="images/Screen Shot 2019-05-11 at 7.12.28 PM.png"></a>
+                <a href="#name"><span class="teal-text name">Noelle Everage</span></a>
+                <a href="#email"><span class="teal-text email">neverage99@gmail.com</span></a>
+              </div></li>
+        <li><a href="#!">About</a></li>
+        <li><a href="#!">Projects</a></li>
+        <li><a href="#!">Skills</a></li>
+        <li><a href="#!">Education</a></li>
+        <li><a href="#!">Contact</a></li>
+        <li><a href="#!">Resume</a></li>
+      </ul>
+      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            
 </html>
-
+<style>
+    .sidenav {
+        width: 200px;
+    }
+</style>
 <script>
  $(document).ready(function(){
     $('.slider').slider();
   });
+
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+  
 
 </script>
