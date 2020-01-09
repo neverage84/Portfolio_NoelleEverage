@@ -46,7 +46,9 @@
  
     <nav class="teal">
             <div class="nav-wrapper">
-                    <a href="#" class="brand-logo center">ABOUT</a>
+                <div class="center-align bigpicture">
+                    <a href="#" class="brand-logo ">ABOUT</a>
+                </div>
             </div>
     </nav>
   <div class="container">
@@ -62,22 +64,24 @@
             </div>
         </div>
     </div>
-        <nav class="teal">
-                <div class="nav-wrapper">
-                        <a href="#" class="brand-logo center">PROJECTS</a>
+    <nav class="teal">
+            <div class="nav-wrapper">
+                <div class="center-align bigpicture ">
+                    <a href="#" class="brand-logo ">PROJECTS</a>
                 </div>
-        </nav>
+            </div>
+    </nav>
         <div class="container">
             <div class="section">
                 <div class="row">
-                    <div class="col s5">
+                    <div class="col s6 carditems">
                         <div class="card medium">
                             <div class="card-image waves-effect waves-block waves-light">
                               <img class="activator" src="images/Screen Shot 2020-01-08 at 5.50.24 PM.png" height="250px">
                             </div>
                             <div class="card-content">
-                              <span class="card-title activator grey-text text-darken-4">Hot Hotel<i class="material-icons right">more_vert</i></span>
-                              <p>Hotel Website to Book and Pay for a Room</p>
+                              <span class="card-title activator grey-text text-darken-4"><b>Hot Hotel</b><i class="material-icons right">more_vert</i></span>
+                              <p class="desc">Hotel Website to Book and Pay for a Room</p>
                             </div>
                             <div class="card-reveal">
                               <span class="card-title grey-text text-darken-4">Accomplishments<i class="material-icons right">close</i></span>
@@ -93,14 +97,14 @@
                             </div>
                           </div>
                         </div> 
-                        <div class="col s5 ">
+                        <div class="col s6 carditems">
                                 <div class="card medium">
                                     <div class="card-image waves-effect waves-block waves-light">
                                       <img class="activator" src="images/Screen Shot 2020-01-08 at 11.08.23 PM.png" height="250px">
                                     </div>
                                     <div class="card-content">
-                                      <span class="card-title activator grey-text text-darken-4">Happy Hour<i class="material-icons right">more_vert</i></span>
-                                      <p>Website for users to find cocktails, bars, and fun facts.</p>
+                                      <span class="card-title activator grey-text text-darken-4"><b>Happy Hour</b><i class="material-icons right">more_vert</i></span>
+                                      <p class="desc">Website for users to find cocktails, bars, and fun facts.</p>
                                     </div>
                                     <div class="card-reveal">
                                       <span class="card-title grey-text text-darken-4">Accomplishments<i class="material-icons right">close</i></span>
@@ -115,6 +119,28 @@
                                     </div>
                                   </div>
                                 </div> 
+                                <!-- <div class="col s4 carditems">
+                                        <div class="card medium">
+                                            <div class="card-image waves-effect waves-block waves-light">
+                                              <img class="activator" src="images/Screen Shot 2020-01-08 at 11.08.23 PM.png" height="250px">
+                                            </div>
+                                            <div class="card-content">
+                                              <span class="card-title activator grey-text text-darken-4">Happy Hour<i class="material-icons right">more_vert</i></span>
+                                              <p>Website for users to find cocktails, bars, and fun facts.</p>
+                                            </div>
+                                            <div class="card-reveal">
+                                              <span class="card-title grey-text text-darken-4">Accomplishments<i class="material-icons right">close</i></span>
+                                              <ol>
+                                                  <li>Built a cocktail application where users can look up bars/cocktails, take a quiz to determine what cocktail they should get, and view ingredients for specific cocktails. </li>
+                                                  <li>jQuery, CSS, HTML5, survey.js, Brewery DB, Google API (disabled to avoid charges).</li>         
+                                              </ol>
+                                              <div class="divider"></div>
+                                              <br>
+                                              <a href="https://shrouded-fortress-55458.herokuapp.com/"class="btn-floating btn-large waves-effect waves-light orange darken-4 cardbuttons tooltipped" data-position="top" data-tooltip="View Online"><i class="material-icons">launch</i></a>
+                                                <a href="https://github.com/rayhe921/Project-2"class="btn-floating btn-large waves-effect waves-light orange darken-4  cardbuttons tooltipped" data-position="top" data-tooltip="View GitHub Code"><img src="https://img.icons8.com/material-rounded/48/000000/github.png" class="github"></a>
+                                            </div>
+                                          </div>
+                                        </div>  -->
                 </div>
                     
             </div>
@@ -180,7 +206,7 @@
   }
 
   .container{
-      margin-right: 100px;
+      margin-right: 115px;
   }
 .bigpicture{
     margin-left: 100px;
@@ -191,6 +217,10 @@
 
 .github {
     vertical-align: middle;
+}
+
+.card-reveal, .desc{
+    font-size: 20px;
 }
 
 </style>
