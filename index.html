@@ -36,7 +36,7 @@
              <li>
              
                     <img src="images/orange_lightbulbs.jpg"> <!-- random image -->
-                    <div class="caption center-align">
+                    <div class="caption bigpicture center-align">
                       <h3 class="teal-text">I believe in a big picture approach to problem-solving.</h3>
                     </div>
                  </li>
@@ -83,13 +83,13 @@
                               <span class="card-title grey-text text-darken-4">Accomplishments<i class="material-icons right">close</i></span>
                               <ol>
                                   <li>Worked as Front-End Developer on Project</li>
-                                  <li>Utlized Materialize CSS in combination with Javascript, JQuery, HTML, CSS, and Handlebars.js</li>
+                                  <li>Utlized Materialize CSS in combination with Javascript, jQuery, HTML, CSS, and Handlebars.js</li>
                                   <li>Incorporated Express on back-end</li>
                               </ol>
                               <div class="divider"></div>
                               <br>
-                              <a href="https://shrouded-fortress-55458.herokuapp.com/"class="btn-floating btn-large waves-effect waves-light red cardbuttons">View</a>
-                              <a href="https://github.com/rayhe921/Project-2"class="btn-floating btn-large waves-effect waves-light red cardbuttons">Code</a>
+                              <a href="https://shrouded-fortress-55458.herokuapp.com/"class="btn-floating btn-large waves-effect waves-light orange darken-4 cardbuttons tooltipped" data-position="top" data-tooltip="View Online"><i class="material-icons">launch</i></a>
+                              <a href="https://github.com/rayhe921/Project-2"class="btn-floating btn-large waves-effect waves-light orange darken-4  cardbuttons tooltipped" data-position="top" data-tooltip="View GitHub Code"><img src="https://img.icons8.com/material-rounded/48/000000/github.png" class="github"></a>
                             </div>
                           </div>
                         </div> 
@@ -106,12 +106,12 @@
                                       <span class="card-title grey-text text-darken-4">Accomplishments<i class="material-icons right">close</i></span>
                                       <ol>
                                           <li>Built a cocktail application where users can look up bars/cocktails, take a quiz to determine what cocktail they should get, and view ingredients for specific cocktails. </li>
-                                          <li>jQuery, CSS3, HTML5, survey.js, Brewery DB, Google API (disabled to avoid charges).</li>         
+                                          <li>jQuery, CSS, HTML5, survey.js, Brewery DB, Google API (disabled to avoid charges).</li>         
                                       </ol>
                                       <div class="divider"></div>
                                       <br>
-                                      <a href="https://neverage84.github.io/Project_1/"class="btn-floating btn-large waves-effect waves-light red cardbuttons">View</a>
-                                      <a href="https://github.com/neverage84/Project_1" class="btn-floating btn-large waves-effect waves-light red cardbuttons">Code</a>
+                                      <a href="https://shrouded-fortress-55458.herokuapp.com/"class="btn-floating btn-large waves-effect waves-light orange darken-4 cardbuttons tooltipped" data-position="top" data-tooltip="View Online"><i class="material-icons">launch</i></a>
+                                        <a href="https://github.com/rayhe921/Project-2"class="btn-floating btn-large waves-effect waves-light orange darken-4  cardbuttons tooltipped" data-position="top" data-tooltip="View GitHub Code"><img src="https://img.icons8.com/material-rounded/48/000000/github.png" class="github"></a>
                                     </div>
                                   </div>
                                 </div> 
@@ -182,12 +182,16 @@
   .container{
       margin-right: 100px;
   }
-
-  /* .cardbuttons {
+.bigpicture{
+    margin-left: 100px;
+}
+  .cardbuttons {
      margin-left: 10px;
-  } */
+  }
 
-
+.github {
+    vertical-align: middle;
+}
 
 </style>
 <script>
@@ -204,6 +208,9 @@
   });
   $(document).ready(function(){
     $('.collapsible').collapsible();
+  });
+  $(document).ready(function(){
+    $('.tooltipped').tooltip();
   });
   
 
