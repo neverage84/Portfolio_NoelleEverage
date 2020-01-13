@@ -22,7 +22,7 @@
     crossorigin="anonymous"></script>
    <!-- Compiled and minified JavaScript -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-     
+     <script src="js/scripts.js"></script>
 
     <div class="slider">
             <ul class="slides">
@@ -46,10 +46,8 @@
  
     <nav class="teal">
             <div class="nav-wrapper">
-              <div class="container">
-                <div class="center-align">
-                    <a href="#" class="brand-logo ">ABOUT</a>
-                </div>
+              <div class="container center-align headings">
+                ABOUT
             </div>
             </div>
     </nav>
@@ -74,10 +72,11 @@
 
     <nav class="teal">
             <div class="nav-wrapper">
-                <div class="center-align bigpicture ">
-                    <a href="#" class="brand-logo ">PROJECTS</a>
+                <div class="container center-align headings">
+                   PROJECTS
+                  </div>
                 </div>
-            </div>
+           
     </nav>
         <div class="container section scrollspy" id="Projects">
             <div class="section">
@@ -282,12 +281,13 @@
         </div>
 
         <nav class="teal">
-                <div class="nav-wrapper">
-                    <div class="center-align bigpicture ">
-                        <a href="#" class="brand-logo ">SKILLS</a>
-                    </div>
+            <div class="nav-wrapper">
+                <div class="container center-align headings">
+                   SKILLS
+                  </div>
                 </div>
-        </nav>
+           
+    </nav>
      <div class="container section scrollspy" id="Skills">
         <div class="row rowUnderNav">
                 <div class="col s12">
@@ -428,10 +428,11 @@
 
             <nav class="teal">
                 <div class="nav-wrapper">
-                    <div class="center-align bigpicture ">
-                        <a href="#" class="brand-logo ">EXPERIENCE</a>
+                    <div class="container center-align headings">
+                       EXPERIENCE
+                      </div>
                     </div>
-                </div>
+               
         </nav>
         
               <div class="container section scrollspy" id="Experience">
@@ -599,13 +600,13 @@
          
   
             <nav class="teal">
-              <div class="nav-wrapper">
-                  <div class="center-align bigpicture ">
-                      <a href="#" class="brand-logo ">EDUCATION</a>
-                  </div>
-              </div>
-              
-      </nav>
+                <div class="nav-wrapper">
+                    <div class="container center-align headings">
+                       EDUCATION
+                      </div>
+                    </div>
+               
+        </nav>
       
             <div class="container section scrollspy" id="Education">
               <div class="row rowUnderNav">
@@ -699,12 +700,13 @@
                     </div>
           </div>
 
-          <nav class="teal " >
+          <nav class="teal">
               <div class="nav-wrapper">
-                  <div class="center-align bigpicture " >
-                      <a href="#" class="brand-logo ">CONTACT</a>
+                  <div class="container center-align headings">
+                     CONTACT
+                    </div>
                   </div>
-              </div>
+             
       </nav>
 
       <div class="container section scrollspy" id="Contact">
@@ -766,39 +768,24 @@
         font-size: 20px;
     line-height: 34px;
     }
+.headings {
+  font-size: 28px;
+}
+    
 .mysql{
   padding-top: 12px;
 }
 
-/* .firebase {
-  padding-top: 18px;
-} */
-/* .express{
-  padding-top: 80px;
-} */
   .education {
    margin-right: 10px;
   }
 .skills{
    margin: 10px;
 }
-    .card{
+    nav, .card{
         overflow: auto;
     }
-     /* Class for when element is above threshold */
-  .pin-top {
-    position: relative;
-  }
 
-  /* // Class for when element is below threshold */
-  .pin-bottom {
-    position: relative;
-  }
-
-  /* // Class for when element is pinned */
-  .pinned {
-    position: fixed !important;
-  }
 
   .contactItems {
    margin-left: 20px;
@@ -815,7 +802,7 @@
     }
     @media only screen and (min-width: 601px){
 .container {
-    width: 70%;
+    width: 80%;
 }
     }
 
@@ -834,29 +821,3 @@
 }
 
 </style>
-<script>
- $(document).ready(function(){
-    $('.slider').slider();
-  });
-
-  $(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
-
-  $(document).ready(function(){
-    $('.pushpin').pushpin();
-  });
-  $(document).ready(function(){
-    $('.collapsible').collapsible();
-  });
-  $(document).ready(function(){
-    $('.tooltipped').tooltip();
-  });
-  $(document).ready(function(){
-    $('.scrollspy').scrollSpy();
-  });
-  $(document).ready(function(){
-    $('.parallax').parallax();
-  });
-
-</script>
