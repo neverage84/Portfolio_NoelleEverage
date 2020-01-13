@@ -36,7 +36,7 @@
              <li>
              
                     <img src="https://tealbook.com/wp-content/uploads/2016/05/Procurement-process.jpg"> <!-- random image -->
-                    <div class="caption bigpicture center-align">
+                    <div class="caption bigpicture right-align">
                       <h3 class="grey-text text-darken-2">I believe in a big picture approach to problem-solving.</h3>
                     </div>
                  </li>
@@ -46,9 +46,11 @@
  
     <nav class="teal">
             <div class="nav-wrapper">
-                <div class="center-align bigpicture">
+              <div class="container">
+                <div class="center-align">
                     <a href="#" class="brand-logo ">ABOUT</a>
                 </div>
+            </div>
             </div>
     </nav>
   <div class="container section scrollspy" id="About">
@@ -354,7 +356,7 @@
                                 Moment
                           </div>
                           <div class="col s2 center skills">
-                            <img alt="" src="https://www.sohamkamani.com/static/65137ed3c844d05124dcfdab28263c21/6b427/express-routing-logo.png" class="responsive-img express">
+                            <img alt="" src="https://cdn.iconscout.com/icon/free/png-256/express-9-1175170.png" class="responsive-img express">
                             Express
                       </div>
                        </div>
@@ -378,7 +380,7 @@
                                 MySql
                           </div>
                               <div class="col s2 center skills">
-                                    <img alt="" src="https://www.stickpng.com/assets/images/58482ee4cef1014c0b5e4a75.png" class="responsive-img">
+                                    <img alt="" src="https://cdn.iconscout.com/icon/free/png-512/sequelize-2-1175003.png" class="responsive-img">
                                     Sequelize
                               </div>
                               <div class="col s2 center skills">
@@ -739,7 +741,7 @@
         <li><a href="#Contact"><i class="material-icons brown-text">contact_mail</i>Contact</a></li>
         <li><a href="https://docs.google.com/document/d/1ca1Ma_eqUzih4dEGeQUcDUxqoqP_WzBhO5rJOJToHDs/edit?usp=sharing"><i class="material-icons">assignment</i>Resume</a></li>
       </ul>
-      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <a href="#" data-target="slide-out" class="sidenav-trigger"></a>
             
 </html>
 <style>
@@ -768,12 +770,12 @@
   padding-top: 12px;
 }
 
-.firebase {
+/* .firebase {
   padding-top: 18px;
-}
-.express{
+} */
+/* .express{
   padding-top: 80px;
-}
+} */
   .education {
    margin-right: 10px;
   }
@@ -802,12 +804,21 @@
    margin-left: 20px;
   }
 
-  .container{
-      margin-right: 115px;
-  }
-.bigpicture{
-    margin-left: 100px;
+ body {
+      padding-left: 200px;
+    }
+
+    @media only screen and (max-width : 992px) {
+      body {
+        padding-left: 0;
+      }
+    }
+    @media only screen and (min-width: 601px){
+.container {
+    width: 70%;
 }
+    }
+
   .cardbuttons {
      margin-left: 10px;
   }
